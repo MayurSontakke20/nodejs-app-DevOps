@@ -18,10 +18,10 @@ function Calculator() {
                 alert("Second value should be greater than first one");
                 return state = "Value Error";
             }
-            return state = (Number(action.value2) - Number(action.value1));
+            return state = setFinalOutput(Number(action.value2) - Number(action.value1));
         }
         if (action.type === "M") {
-            return state = Number(action.value1) * Number(action.value2);
+            return state = setFinalOutput(Number(action.value1) * Number(action.value2));
         }
         if (action.type === "D") {
             if (Number(action.value2) == 0) {
@@ -29,7 +29,7 @@ function Calculator() {
                 return state = "Divide by Zero Error";
 
             }
-            return state = Number(action.value1) / Number(action.value2);
+            return state = setFinalOutput(Number(action.value1) / Number(action.value2));
         }
         return state;
     }
