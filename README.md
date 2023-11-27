@@ -2,9 +2,7 @@
 follow below command to deploy nodejs app in new server 
 
     2  sudo apt update
-    
     3  sudo apt install apt-transport-https ca-certificates curl software-properties-common
-    
     4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
     5  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
     6  apt-cache policy docker-ce
@@ -20,7 +18,7 @@ follow below command to deploy nodejs app in new server
    16  cat id_ed25519.pub
    17  cd
    18  cd /home/
-   19  ll
+   19  ll 
    20  git clone git@github.com:MayurSontakke20/react-app-DevOps.git
    21  ll
    22  cd react-app-DevOps/
@@ -31,6 +29,7 @@ follow below command to deploy nodejs app in new server
    27  nano package-lock.json
    28  ll
    29  nano Dockerfile
+   
    30  ll
    31  docker build -t nodejs:app -f Dockerfile .
    32  docker images
@@ -40,3 +39,4 @@ follow below command to deploy nodejs app in new server
    36  docker ps -a
    37  ll
    38  history
+   
