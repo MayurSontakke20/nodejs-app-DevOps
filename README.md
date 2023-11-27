@@ -1,7 +1,10 @@
 
 follow below command to deploy nodejs app in new server 
+
     2  sudo apt update
+    
     3  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    
     4  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
     5  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
     6  apt-cache policy docker-ce
