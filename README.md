@@ -27,8 +27,6 @@ follow below command to deploy nodejs app in new server
     29  nano Dockerfile
     31  docker build -t nodejs:app -f Dockerfile .
     32  docker images
-    33  docker run -d -p 8081:3000 --name nodejs-app --restart=always node:14
-    34  docker images
     35  docker run -d -p 8081:3000 --name nodejs-app --restart=always nodejs:app
     36  docker ps -a
     37  ll
