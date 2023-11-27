@@ -37,4 +37,3 @@ follow below command to deploy nodejs app in new server
    36  docker ps -a
    37  ll
    38  history
-root@ip-172-31-9-71:/home/react-app-DevOps#
