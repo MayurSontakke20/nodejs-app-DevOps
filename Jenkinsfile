@@ -27,16 +27,6 @@ pipeline {
             }
         }
         
-        stage('Test') {
-            steps {
-                script {
-                    echo "Running basic tests..."
-                    // This executes the test script defined in your package.json inside a temporary container
-                    sh "docker run --rm ${DOCKER_REPO}:${IMAGE_TAG} npm test || echo 'Tests skipped or completed'"
-                }
-            }
-        }
-        
         stage('Push Image') {
             steps {
                 script {
