@@ -132,7 +132,22 @@ To build the automation workflow and tie it to the correct project branch, the f
 
 6. Clicked **Save**.
 
-### 3. Setting up the GitHub Webhook for Automated Deployment
+
+### 3. Configuring Jenkins Job Triggers for Automation
+
+Before establishing the external connection from GitHub, the build trigger was armed inside the job configuration panel:
+
+1. Open your pipeline job: **`NodeJS-CICD`**.
+2. Click **Configure** on the left-side menu options.
+3. Scroll down until reaching the section labeled **Build Triggers**.
+4. Enable the following option:
+* **GitHub hook trigger for GITScm polling**
+
+
+5. Click **Save**.
+
+   
+### 4. Setting up the GitHub Webhook for Automated Deployment
 
 To trigger the pipeline instantly whenever changes are pushed to GitHub, a Webhook link was established:
 
@@ -149,7 +164,7 @@ To trigger the pipeline instantly whenever changes are pushed to GitHub, a Webho
 5. Clicked **Add webhook**.
 6. Refreshing the page showed a green checkmark next to the URL, confirming GitHub successfully handshake-verified communication with the EC2 Jenkins instance.
 
-### 4. Pipeline Definition (`Jenkinsfile`)
+### 5. Pipeline Definition (`Jenkinsfile`)
 
 The pipeline runs linearly, ensuring code quality, container builds, and seamless zero-downtime deployment:
 
@@ -333,4 +348,6 @@ http://localhost:9090
 ```
 
 ```
+
+
 
