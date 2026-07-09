@@ -3,7 +3,7 @@ pipeline {
     
     environment {
         // MATCH THIS WITH THE CREDENTIAL ID YOU CREATED IN JENKINS
-        DOCKER_REGISTRY_CREDENTIALS_ID = 'docker-hub-credentials'
+        DOCKER_REGISTRY_CREDENTIALS_ID = 'dockerhub'
         // CHANGE THIS TO YOUR DOCKERHUB USERNAME AND IMAGE NAME
         DOCKER_REPO = 'mayurhub/nodejs-app-devops' 
         IMAGE_TAG = "${BUILD_NUMBER}"
