@@ -60,7 +60,7 @@ pipeline {
                     
                     // Run the container on Port 80 (or 3000 depending on what your app listens to)
                     // The assignment asks for Port 80 mapping
-                    sh "docker run -d --name nodejs-app-container -p 80:3000 ${DOCKER_REPO}:latest"
+                    sh "docker run -d --name nodejs-app-container -p 3001:3000 ${DOCKER_REPO}:latest"
                 }
             }
         }
