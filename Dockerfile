@@ -16,7 +16,7 @@ COPY . .
 # Build the React app for production
 RUN npm run build
 
-# Expose the port the app runs on
+# Expose the port the app runs on 3000
 EXPOSE 3000
 
 # Create a non-root user to run the application and change to that user
