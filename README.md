@@ -140,7 +140,7 @@ To trigger the pipeline instantly whenever changes are pushed to GitHub, a Webho
 2. Clicked on the **Settings** tab located on the top navigation bar of the repository.
 3. Clicked on **Webhooks** from the left-hand settings menu, then clicked the **Add webhook** button.
 4. Configured the webhook details as follows:
-* **Payload URL:** Entered `http://<YOUR_EC2_PUBLIC_IP>:8080/github-webhook/` *(The trailing slash `/` is strict and mandatory for Jenkins).*
+* **Payload URL:** Entered `http://54.224.8.65:8080/github-webhook/` *(The trailing slash `/` is strict and mandatory for Jenkins).*
 * **Content type:** Selected `application/json`.
 * **Secret:** Left blank.
 * **Which events would you like to trigger this webhook?:** Selected *Just the push event*.
