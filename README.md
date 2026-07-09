@@ -1,7 +1,3 @@
-Here is a complete, production-ready `README.md` file that captures every single detail of your project implementation. It includes all the infrastructure setup, the manual configuration of your monitoring tools, the port adjustments you made to avoid conflicts, and the exact files you created.
-
-You can copy and paste this directly into your repository's `README.md` file.
-
 ---
 
 ```markdown
