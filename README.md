@@ -12,11 +12,10 @@ This repository contains a containerized Node.js application deployed automatica
 Developer ──> Git Push ──> GitHub ──> Jenkins Pipeline ──> Docker Build & Push ──> Deploy to EC2 (Port 3001)
 └──> Monitored via Prometheus & Grafana
 
-```
-
----
 
 ## Phase 1: Infrastructure & AWS Setup
+```
+---
 
 ### 1. EC2 Instance Provisioning
 An AWS EC2 Instance was deployed with the following configurations:
@@ -33,9 +32,12 @@ The AWS Security Group was configured with inbound rules to expose the required 
 * **Port 9090:** Prometheus Web UI
 
 ---
+```
 
 ## Phase 2: Host Environment Configuration & Tool Installation
 
+```
+---
 Once connected to the instance via SSH, all essential packages and services were updated and installed manually on the host machine.
 
 ### 1. Docker Installation
