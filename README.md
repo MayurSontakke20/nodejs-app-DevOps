@@ -36,11 +36,12 @@ The AWS Security Group was configured with inbound rules to expose the required 
 
 ## Phase 2: Host Environment Configuration & Tool Installation
 
+### 1. Docker Installation
+
+Once connected to the instance via SSH, all essential packages and services were updated and installed manually on the host machine.
 ```
 ---
-Once connected to the instance via SSH, all essential packages and services were updated and installed manually on the host machine.
 
-### 1. Docker Installation
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y docker.io curl git
